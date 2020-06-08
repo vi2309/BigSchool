@@ -32,4 +32,16 @@ textarea {
 .navbar-inverse .navbar-brand {
    color: #ffffff;
 }
-
+/*course layout*/
+.course {
+    list-style:none;
+}
+.course > li  {
+    position: relative;
+    magrin-bottom:30px;
+}
+.course > li .date  {
+    text-align:center;
+    background-color: rebeccapurple;
+    
+}
