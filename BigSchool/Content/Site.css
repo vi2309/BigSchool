@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+.navbar-inverse {
+    background-color: #3f7cd0;
+    border-color: #020202;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-brand {
+   color: #ffffff;
+}
+
