@@ -2,12 +2,12 @@
 @{
     ViewBag.Title = "Home Page";
 }
-    <div class="row">
+    <div class="row" style="list-style:none;">
         <ul>
             @foreach (var course in Model)
             {
-                <li>
-                    <div class="date">
+                <li  style="list-style:none; position: relative; magrin-bottom:30px; " >
+                    <div class="date" style="text-align:center;background-color: orange; color:white;width:60px;border-radius:8px;">
                         <div class="month">       
                                 @course.DateTime.ToString("MM")
                         </div>
@@ -15,7 +15,7 @@
                             @course.DateTime.ToString("dd")
                         </div>
                     </div>
-                    <div class="details ">
+                    <div class="details " style=" position: absolute;top:0;left:70px;">
                         <span class="lecturer">
                             @course.Lecturer.Name
                             <button class="btn btn-default btn-sm js-toggle-follow " data-user-id="@course.LecturerId">Follow</button>
